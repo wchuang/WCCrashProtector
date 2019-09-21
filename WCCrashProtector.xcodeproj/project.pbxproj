@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		01F2B04A232EA5D0005EB9D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F2B049232EA5D0005EB9D6 /* AppDelegate.swift */; };
-		01F2B04C232EA5D0005EB9D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F2B04B232EA5D0005EB9D6 /* ViewController.swift */; };
+		01F2B04C232EA5D0005EB9D6 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F2B04B232EA5D0005EB9D6 /* DemoViewController.swift */; };
 		01F2B04F232EA5D0005EB9D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01F2B04D232EA5D0005EB9D6 /* Main.storyboard */; };
 		01F2B051232EA5D1005EB9D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01F2B050232EA5D1005EB9D6 /* Assets.xcassets */; };
 		01F2B054232EA5D1005EB9D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01F2B052232EA5D1005EB9D6 /* LaunchScreen.storyboard */; };
+		01F2B05D232EA696005EB9D6 /* CrashProtector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F2B05C232EA696005EB9D6 /* CrashProtector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		01F2B046232EA5D0005EB9D6 /* WCCrashProtector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WCCrashProtector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01F2B049232EA5D0005EB9D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		01F2B04B232EA5D0005EB9D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		01F2B04B232EA5D0005EB9D6 /* DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
 		01F2B04E232EA5D0005EB9D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		01F2B050232EA5D1005EB9D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01F2B053232EA5D1005EB9D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01F2B055232EA5D1005EB9D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01F2B05C232EA696005EB9D6 /* CrashProtector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrashProtector.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +57,22 @@
 			isa = PBXGroup;
 			children = (
 				01F2B049232EA5D0005EB9D6 /* AppDelegate.swift */,
-				01F2B04B232EA5D0005EB9D6 /* ViewController.swift */,
-				01F2B04D232EA5D0005EB9D6 /* Main.storyboard */,
 				01F2B050232EA5D1005EB9D6 /* Assets.xcassets */,
-				01F2B052232EA5D1005EB9D6 /* LaunchScreen.storyboard */,
+				01F2B04B232EA5D0005EB9D6 /* DemoViewController.swift */,
 				01F2B055232EA5D1005EB9D6 /* Info.plist */,
+				01F2B052232EA5D1005EB9D6 /* LaunchScreen.storyboard */,
+				01F2B04D232EA5D0005EB9D6 /* Main.storyboard */,
+				01F2B05B232EA64F005EB9D6 /* Source */,
 			);
 			path = WCCrashProtector;
+			sourceTree = "<group>";
+		};
+		01F2B05B232EA64F005EB9D6 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				01F2B05C232EA696005EB9D6 /* CrashProtector.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +107,7 @@
 				TargetAttributes = {
 					01F2B045232EA5D0005EB9D6 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -135,7 +147,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01F2B04C232EA5D0005EB9D6 /* ViewController.swift in Sources */,
+				01F2B04C232EA5D0005EB9D6 /* DemoViewController.swift in Sources */,
+				01F2B05D232EA696005EB9D6 /* CrashProtector.swift in Sources */,
 				01F2B04A232EA5D0005EB9D6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +295,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 86AF29T7FZ;
 				INFOPLIST_FILE = WCCrashProtector/Info.plist;
@@ -291,6 +305,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Frank-Huang-WC.huang-.WCCrashProtector";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,6 +316,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 86AF29T7FZ;
 				INFOPLIST_FILE = WCCrashProtector/Info.plist;
@@ -309,6 +326,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Frank-Huang-WC.huang-.WCCrashProtector";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

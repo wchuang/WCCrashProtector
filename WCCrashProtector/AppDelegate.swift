@@ -16,6 +16,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        NSObject.protect()
+        DemoViewController.protect()
+        NSNull.protect()
+        let demoVC = DemoViewController()
+        demoVC.demo()
+        NSNull().accessibilityActivate()
+        let demo = Demo()
+        demo.run()
+        demo.copy()
         return true
     }
 
